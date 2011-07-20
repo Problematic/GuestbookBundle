@@ -1,0 +1,7 @@
+Problematic_Guestbook_default:
+    pattern:  /
+    defaults: { _controller: ProblematicGuestbookBundle:Guestbook:index }
+
+Problematic_Guestbook_thanks:
+    pattern:  /thanks
+    defaults: { _controller: ProblematicGuestbookBundle:Guestbook:thanks }

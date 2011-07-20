@@ -2,11 +2,18 @@
 
 namespace Problematic\GuestbookBundle\Model;
 
+use Symfony\Component\Validator\Constraints as Assert;
+
 abstract class Address
 {
     
     protected $id;
     protected $name;
+    protected $phone;
+    /**
+     * @Assert\Email()
+     */
+    protected $email;
     protected $line_1;
     protected $line_2;
     protected $city;
@@ -26,6 +33,26 @@ abstract class Address
     public function getName()
     {
         return $this->name;
+    }
+    
+    public function setPhone($phone)
+    {
+        $this->phone = $phone;
+    }
+    
+    public function getPhone()
+    {
+        return $this->phone;
+    }
+    
+    public function setEmail($email)
+    {
+        $this->email = $email;
+    }
+    
+    public function getEmail()
+    {
+        return $this->email;
     }
     
     public function setLine1($line_1)

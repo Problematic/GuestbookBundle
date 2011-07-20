@@ -21,11 +21,19 @@ class Address extends BaseAddress
      */
     protected $name;
     /**
+     * @ORM\Column(type="string", nullable="true")
+     */
+    protected $phone;
+    /**
+     * @ORM\Column(type="string", nullable="true")
+     */
+    protected $email;
+    /**
      * @ORM\Column(type="string")
      */
     protected $line_1;
     /**
-     * @ORM\Column(type="string", required="false")
+     * @ORM\Column(type="string", nullable="true")
      */
     protected $line_2;
     /**

@@ -9,7 +9,7 @@ use Symfony\Component\Config\Definition\Processor;
 class ProblematicGuestbookExtension extends Extension
 {
     
-    public function load(array $config, ContainerBuilder $container)
+    public function load(array $configs, ContainerBuilder $container)
     {
         $processor = new Processor();
         $configuration = new Configuration();

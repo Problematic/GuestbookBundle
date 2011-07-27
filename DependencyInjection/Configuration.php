@@ -13,7 +13,7 @@ class Configuration
         
         $treeBuilder->root('problematic_guestbook', 'array')
             ->children()
-                ->scalarNode('email')->isRequired->end()
+                ->scalarNode('email')->isRequired()->end()
             ->end()
         ->end();
         
